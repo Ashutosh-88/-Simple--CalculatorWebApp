@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendOperatorToDisplay('%')" class="operator">%</button><!--Remainder button-->
+            <button onclick="clearDisplay()">C</button><!--Clear button-->
+            <button onclick="clearDisplay()">C</button><!--Clear button-->
+            <button onclick="backSpace()">&#8592;</button><!--Backspace button-->
+            <button onclick="appendOperatorToDisplay()" class="operator">1/x</button><!--1 by input button-->
+            <button onclick="appendOperatorToDisplay('^')" class="operator">x<sup>2</sup></button><!--Square button-->
+            <button onclick="appendOperatorToDisplay('√')" class="operator"><sup>2</sup>&#8730;x</button><!--Square root button-->
+            <button onclick="appendOperatorToDisplay('/')" class="operator">&#247;</button><!--Division button-->
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendOperatorToDisplay('*')" class="operator">&#215;</button><!--Multiplication button-->
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendOperatorToDisplay('-')" class="operator">-</button><!--Subtraction button-->
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendOperatorToDisplay('+')" class="operator">+</button><!--Addition button-->
+            <button onclick="appendSignToDisplay('+/-')" class="sign"><sup>+</sup>/-</button><!--Sign change button-->
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button><!--IsEqual To button-->
+        </div>
+    </div>
+    <script src="index.js" onload="alert('NOTE: Use only one calculation at a time.')"></script>
+</body>
+</html>

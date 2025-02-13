@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#calculator {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 3%, 5%);
+  border-radius: 15px;
+  max-width: 350px;
+  overflow: hidden;
+  border: none;
+  padding: 10px;
+  box-shadow: -10px 10px 10px hsl(0, 5%, 19%);
+}
+
+#display {
+  width: 311px;
+  font-size: 1.5rem;
+  text-align: right;
+  border: none;
+  background-color: hsl(0, 1%, 13%);
+  color: white;
+  margin: 10px 0px 5px 0px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  text-align: center;
+  border: none;
+}
+#keys button:nth-child(1),
+#keys button:nth-child(2),
+#keys button:nth-child(3),
+#keys button:nth-child(4),
+#keys button:nth-child(5),
+#keys button:nth-child(6),
+#keys button:nth-child(7),
+#keys button:nth-child(8),
+#keys button:nth-child(12),
+#keys button:nth-child(16),
+#keys button:nth-child(20) {
+  background-color: hsl(0, 0%, 20%);
+}
+#keys button:nth-child(24) {
+  background-color: hsl(206, 77%, 70%);
+}
+
+button {
+  width: 85px;
+  height: 75px;
+  background-color: hsl(0, 0%, 40%);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 20%);
+}
+
+#keys button:nth-child(1):hover,
+#keys button:nth-child(2):hover,
+#keys button:nth-child(3):hover,
+#keys button:nth-child(4):hover,
+#keys button:nth-child(5):hover,
+#keys button:nth-child(6):hover,
+#keys button:nth-child(7):hover,
+#keys button:nth-child(8):hover,
+#keys button:nth-child(12):hover,
+#keys button:nth-child(16):hover,
+#keys button:nth-child(20):hover {
+  background-color: hsl(0, 0%, 15%);
+}
+#keys button:nth-child(24):hover {
+  background-color: hsl(206, 77%, 60%);
+}
+
+#keys button:nth-child(1):active,
+#keys button:nth-child(2):active,
+#keys button:nth-child(3):active,
+#keys button:nth-child(4):active,
+#keys button:nth-child(5):active,
+#keys button:nth-child(6):active,
+#keys button:nth-child(7):active,
+#keys button:nth-child(8):active,
+#keys button:nth-child(12):active,
+#keys button:nth-child(16):active,
+#keys button:nth-child(20):active {
+  background-color: hsl(0, 0%, 10%);
+}
+#keys button:nth-child(24):active {
+  background-color: hsl(206, 77%, 50%);
+}
